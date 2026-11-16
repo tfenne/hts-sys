@@ -155,7 +155,7 @@ jobs:
           default: ${{ matrix.default }}
 
       - name: Install htslib dependencies
-        run: brew install bzip2 zlib xz curl-openssl
+        run: brew install bzip2 zlib xz curl
 
       - name: Test
         uses: actions-rs/cargo@v1.0.1
